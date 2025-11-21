@@ -113,10 +113,10 @@ class OrionCanBMSClient(BaseBMSClient):
 # Choose which implementation the API uses:
 # For now we use the fake one. When ready, swap to OrionCanBMSClient.
 
-# bms_client: BaseBMSClient = OrionCanBMSClient(
-#     channel="can0",
-#     bustype="socketcan",
-#     bitrate=500000,
-# )
+bms_client: BaseBMSClient = OrionCanBMSClient(
+    channel="can0",
+    bustype="socketcan",
+    bitrate=500000,
+)
 
 bms_client: BaseBMSClient = FakeOrionBMSClient()
