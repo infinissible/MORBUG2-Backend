@@ -1,6 +1,8 @@
 # main.py
 from fastapi import FastAPI
-from .modbus_client import bms_client
+
+# from .modbus_client import bms_client
+from .can_bms_client import bms_client
 
 app = FastAPI(title="EMS Backend", version="0.1.0")
 
